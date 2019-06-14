@@ -1,6 +1,6 @@
 x = input('Enter your phrase: ')
 x = list(x)
-targets = ''' .'"():;<>/?[{]}!@#$%^&*-+_='''
+targets = ''' `~.'"():;<>/?[{]}!@#$%^&*-+_='''
 for word in targets:
     if word in x:
         x.remove(word)
