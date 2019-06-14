@@ -9,7 +9,7 @@ Python code to check a palindrome (be it spaces or any other symbols included)
 
   x = input('Enter your phrase: ') 
   x = list(x)                                      # converts list to string 
-  targets = ''' .'"():;<>/?[{]}!@#$%^&*-+_='''     # creates a string of sample of which characters are to be excluded 
+  targets = ''' `~.'"():;<>/?[{]}!@#$%^&*-+_='''     # creates a string of sample of which characters are to be excluded 
   for word in targets:                             # compares sample to input phrase    
       if word in x:  
           x.remove(word)  
